@@ -2,6 +2,19 @@
   --blue: #77a0ba;
 }
 
+body {
+  padding-top: 74px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+}
+
 .heart {
   background: url(assets/images/heart.png) 10px center no-repeat;
 }
@@ -30,6 +43,7 @@
   align-items: center;
 }
 
+/* Hide the images by default */
 .mySlides {
   display: none;
 }
@@ -101,3 +115,19 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+*::-webkit-scrollbar {
+  width: 5.2px;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+*::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+*::-webkit-scrollbar-track {
+  background-color: #5D5D5D;
+}
+
+* {box-sizing:border-box}
